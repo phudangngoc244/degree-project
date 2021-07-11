@@ -46,3 +46,4 @@ class ChainMigrationElection(Election):
 
     def on_rollback(self, bigchain, new_height):
         bigchain.delete_abci_chain(new_height)
+
